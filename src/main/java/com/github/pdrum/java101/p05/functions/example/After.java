@@ -46,11 +46,11 @@ public class After {
     }
 
     public static boolean isPrime(int number) {
-        for (int smallerNumber = 0; smallerNumber < number; smallerNumber++) {
-            if (smallerNumber != 0 && smallerNumber != 1 && number % smallerNumber == 0) {
+        for (int smallerNumber = 2; smallerNumber < number; smallerNumber++) {
+            if (number % smallerNumber == 0) {
                 return false;
             }
         }
-        return true;
+        return number != 0 && number != 1;
     }
 }

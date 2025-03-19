@@ -28,8 +28,11 @@ public class Before {
             for (int number = 0; number < threshold; number++) {
                 boolean isPrime = true;
 
-                for (int smallerNumber = 0; smallerNumber < number; smallerNumber++) {
-                    if (smallerNumber != 0 && smallerNumber != 1 && number % smallerNumber == 0) {
+                if (number == 0 || number == 1) {
+                    isPrime = false;
+                }
+                for (int smallerNumber = 2; smallerNumber < number; smallerNumber++) {
+                    if (number % smallerNumber == 0) {
                         isPrime = false;
                     }
                 }
