@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AfterTest {
+public class SolutionTest {
 
     @Test
     public void testSumOfEvenNumbersUntil10() {
@@ -86,7 +86,7 @@ public class AfterTest {
         System.setIn(in);
         System.setOut(new PrintStream(out));
 
-        After.main(new String[]{});
+        Solution.main(new String[]{});
 
         return out.toString().replace("\r\n", "\n"); // Normalize line endings for consistency
     }
