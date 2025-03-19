@@ -1,4 +1,4 @@
-package com.github.pdrum.java101.p05.functions.example;
+package com.github.pdrum.java101.p05.functions.exercise1;
 
 import java.util.Scanner;
 
