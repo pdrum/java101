@@ -1,6 +1,8 @@
 package com.github.pdrum.java101.p05.functions.exercise2;
+
 import java.util.Scanner;
-public class SolutionProblem {
+
+public class Solution {
 
     public static void main(String[] args) {
         System.out.println("Enter three numbers");
